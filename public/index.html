@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="main.css">
   <script src="bundle.js" async></script>
 </head>
+
 <body>
 <!-- hello -->
 <div data-controller="hello">
@@ -31,5 +33,16 @@
   <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
 </div>
 
+<div data-controller="slideshow" data-slideshow-index="1">
+  <button data-action="slideshow#previous">←</button>
+  <button data-action="slideshow#next">→</button>
+
+  <div data-target="slideshow.slide" class="slide">🐵</div>
+  <div data-target="slideshow.slide" class="slide">҉</div>
+  <div data-target="slideshow.slide" class="slide">ѧ</div>
+  <div data-target="slideshow.slide" class="slide">Ψ</div>
+</div>
+
 </body>
+
 </html>
